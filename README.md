@@ -197,6 +197,26 @@
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<h2 align="center">
+My Current Workstation Specification </h2>
+
+<div align="center">
+	
+
+![CPU](https://img.shields.io/badge/AMD-Ryzen_5_3500X-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
+<br> 
+	
+![GPU](https://img.shields.io/badge/AMD-Radeon_RX_550-ED1C24?style=for-the-badge&logo=amd&logoColor=white) 
+
+
+
+</div>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px">&nbsp;***My working tools...***
