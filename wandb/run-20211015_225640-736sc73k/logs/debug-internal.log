@@ -1,0 +1,194 @@
+2021-10-15 22:56:40,654 INFO    MainThread:66342 [internal.py:wandb_internal():86] W&B internal server running at pid: 66342, started at: 2021-10-15 22:56:40.654674
+2021-10-15 22:56:40,656 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: check_version
+2021-10-15 22:56:40,656 INFO    WriterThread:66342 [datastore.py:open_for_write():77] open: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/run-736sc73k.wandb
+2021-10-15 22:56:40,657 DEBUG   SenderThread:66342 [sender.py:send():185] send: header
+2021-10-15 22:56:40,657 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: check_version
+2021-10-15 22:56:40,842 DEBUG   SenderThread:66342 [sender.py:send():185] send: run
+2021-10-15 22:56:41,424 INFO    SenderThread:66342 [dir_watcher.py:__init__():169] watching files in: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files
+2021-10-15 22:56:41,424 INFO    SenderThread:66342 [sender.py:_start_run_threads():746] run started: 736sc73k with start time 1634318800
+2021-10-15 22:56:41,425 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:41,425 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:41,425 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: run_start
+2021-10-15 22:56:42,429 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-summary.json
+2021-10-15 22:56:42,680 DEBUG   HandlerThread:66342 [meta.py:__init__():40] meta init
+2021-10-15 22:56:42,680 DEBUG   HandlerThread:66342 [meta.py:__init__():54] meta init done
+2021-10-15 22:56:42,680 DEBUG   HandlerThread:66342 [meta.py:probe():211] probe
+2021-10-15 22:56:42,689 DEBUG   HandlerThread:66342 [meta.py:_setup_git():201] setup git
+2021-10-15 22:56:42,696 DEBUG   HandlerThread:66342 [meta.py:_setup_git():208] setup git done
+2021-10-15 22:56:42,696 DEBUG   HandlerThread:66342 [meta.py:_save_pip():58] save pip
+2021-10-15 22:56:42,697 DEBUG   HandlerThread:66342 [meta.py:_save_pip():72] save pip done
+2021-10-15 22:56:42,697 DEBUG   HandlerThread:66342 [meta.py:probe():249] probe done
+2021-10-15 22:56:42,699 DEBUG   SenderThread:66342 [sender.py:send():185] send: files
+2021-10-15 22:56:42,699 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-15 22:56:42,703 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-15 22:56:42,703 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: stop_status
+2021-10-15 22:56:43,427 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/requirements.txt
+2021-10-15 22:56:43,427 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-metadata.json
+2021-10-15 22:56:43,427 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log
+2021-10-15 22:56:43,445 DEBUG   SenderThread:66342 [sender.py:send():185] send: config
+2021-10-15 22:56:43,454 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,455 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,457 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,457 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,458 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,458 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,458 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,459 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,459 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,459 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,459 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,459 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,462 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,462 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,462 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,462 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,464 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,465 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,465 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,465 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,465 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,466 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,466 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,466 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,467 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:43,467 DEBUG   SenderThread:66342 [sender.py:send():185] send: history
+2021-10-15 22:56:43,467 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:56:43,468 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:56:44,086 INFO    Thread-11 :66342 [upload_job.py:push():137] Uploaded file /tmp/tmp8dd9t9djwandb/51q7t461-wandb-metadata.json
+2021-10-15 22:56:44,427 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-summary.json
+2021-10-15 22:56:45,428 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log
+2021-10-15 22:56:58,310 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-15 22:56:58,310 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: stop_status
+2021-10-15 22:57:10,774 DEBUG   SenderThread:66342 [sender.py:send():185] send: stats
+2021-10-15 22:57:11,444 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/config.yaml
+2021-10-15 22:57:13,934 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-15 22:57:13,934 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: stop_status
+2021-10-15 22:57:19,449 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log
+2021-10-15 22:57:19,883 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:19,883 DEBUG   SenderThread:66342 [sender.py:send():185] send: telemetry
+2021-10-15 22:57:19,884 DEBUG   SenderThread:66342 [sender.py:send():185] send: exit
+2021-10-15 22:57:19,884 INFO    SenderThread:66342 [sender.py:send_exit():294] handling exit code: 1
+2021-10-15 22:57:19,885 INFO    SenderThread:66342 [sender.py:send_exit():296] handling runtime: 38
+2021-10-15 22:57:19,886 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:57:19,886 INFO    SenderThread:66342 [sender.py:send_exit():306] send defer
+2021-10-15 22:57:19,886 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:19,888 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:19,888 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-15 22:57:19,888 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:19,888 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-15 22:57:19,889 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 1
+2021-10-15 22:57:19,889 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:19,890 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-15 22:57:19,904 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:19,904 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-15 22:57:19,904 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 2
+2021-10-15 22:57:19,905 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:19,905 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-15 22:57:19,906 DEBUG   SenderThread:66342 [sender.py:send():185] send: stats
+2021-10-15 22:57:19,907 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:19,907 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-15 22:57:19,907 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 3
+2021-10-15 22:57:19,908 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:19,908 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-15 22:57:19,909 DEBUG   SenderThread:66342 [sender.py:send():185] send: summary
+2021-10-15 22:57:19,911 INFO    SenderThread:66342 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-15 22:57:19,911 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:19,911 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-15 22:57:19,911 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 4
+2021-10-15 22:57:19,912 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:19,912 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-15 22:57:19,913 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:19,913 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-15 22:57:19,990 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:20,450 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log
+2021-10-15 22:57:20,451 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-summary.json
+2021-10-15 22:57:20,653 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 5
+2021-10-15 22:57:20,653 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:20,654 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:20,654 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-15 22:57:20,655 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:20,655 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-15 22:57:20,655 INFO    SenderThread:66342 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-15 22:57:20,756 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,450 INFO    Thread-8  :66342 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/config.yaml
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():313] scan: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():327] scan save: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/config.yaml config.yaml
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():327] scan save: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-metadata.json wandb-metadata.json
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():327] scan save: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/requirements.txt requirements.txt
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():327] scan save: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log output.log
+2021-10-15 22:57:21,451 INFO    SenderThread:66342 [dir_watcher.py:finish():327] scan save: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-summary.json wandb-summary.json
+2021-10-15 22:57:21,457 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 6
+2021-10-15 22:57:21,457 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:21,462 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:21,463 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-15 22:57:21,463 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:21,464 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-15 22:57:21,464 INFO    SenderThread:66342 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-15 22:57:21,559 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,560 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:21,663 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,664 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:21,768 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,769 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:21,873 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,873 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:21,980 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:21,997 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,100 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,101 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,205 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,205 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,308 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,309 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,412 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,413 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,516 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,517 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,620 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,621 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,688 INFO    Thread-12 :66342 [upload_job.py:push():137] Uploaded file /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/config.yaml
+2021-10-15 22:57:22,702 INFO    Thread-13 :66342 [upload_job.py:push():137] Uploaded file /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/requirements.txt
+2021-10-15 22:57:22,722 INFO    Thread-15 :66342 [upload_job.py:push():137] Uploaded file /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/wandb-summary.json
+2021-10-15 22:57:22,724 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,724 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,760 INFO    Thread-14 :66342 [upload_job.py:push():137] Uploaded file /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/files/output.log
+2021-10-15 22:57:22,826 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,826 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,930 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:22,930 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:22,961 INFO    Thread-7  :66342 [sender.py:transition_state():319] send defer: 7
+2021-10-15 22:57:22,962 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:22,962 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-15 22:57:22,963 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:22,963 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-15 22:57:23,034 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:23,404 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 8
+2021-10-15 22:57:23,404 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:23,405 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:23,406 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-15 22:57:23,406 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:23,406 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-15 22:57:23,407 INFO    SenderThread:66342 [sender.py:transition_state():319] send defer: 9
+2021-10-15 22:57:23,408 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: defer
+2021-10-15 22:57:23,408 INFO    HandlerThread:66342 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-15 22:57:23,409 DEBUG   SenderThread:66342 [sender.py:send():185] send: final
+2021-10-15 22:57:23,409 DEBUG   SenderThread:66342 [sender.py:send():185] send: footer
+2021-10-15 22:57:23,409 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: defer
+2021-10-15 22:57:23,410 INFO    SenderThread:66342 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-15 22:57:23,507 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-15 22:57:23,508 DEBUG   SenderThread:66342 [sender.py:send_request():199] send_request: poll_exit
+2021-10-15 22:57:23,508 INFO    SenderThread:66342 [file_pusher.py:join():182] waiting for file pusher
+2021-10-15 22:57:24,739 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-15 22:57:24,742 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-15 22:57:24,744 DEBUG   HandlerThread:66342 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-15 22:57:24,745 INFO    HandlerThread:66342 [handler.py:finish():683] shutting down handler
+2021-10-15 22:57:25,410 INFO    WriterThread:66342 [datastore.py:close():281] close: /home/ashvinee/Documents/Ferrato/wandb/run-20211015_225640-736sc73k/run-736sc73k.wandb
+2021-10-15 22:57:25,737 INFO    SenderThread:66342 [sender.py:finish():986] shutting down sender
+2021-10-15 22:57:25,738 INFO    SenderThread:66342 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-15 22:57:25,738 INFO    SenderThread:66342 [file_pusher.py:join():182] waiting for file pusher
+2021-10-15 22:57:25,742 INFO    MainThread:66342 [internal.py:handle_exit():76] Internal process exited

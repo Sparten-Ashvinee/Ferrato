@@ -1,0 +1,20 @@
+model:
+  name: google/bert_uncased_L-2_H-128_A-2
+  tokenizer: google/bert_uncased_L-2_H-128_A-2
+
+processing:
+  batch_size: 64
+  max_length: 128
+  no-cuda: False
+
+training:
+  fastmode: False
+  seed: 42
+  cuda: False
+  epochs: 2
+  lr: 0.01
+  weight_decay: 5e-4
+  hidden: 16
+  dropout: 0.5
+  batch_size: 8
+  max_length: 2708
