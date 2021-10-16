@@ -1,7 +1,10 @@
 /wandb/
 /Generate Recipes/
 /GCP/
-/Data/
-/checkpoints/
 /__pycache__/
 /Pipfile
+/.dvc/
+/aws/
+/checkpoints/
+/Data/
+/outputs

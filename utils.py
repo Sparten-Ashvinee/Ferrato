@@ -15,7 +15,7 @@ def encode_onehot(labels):
     return labels_onehot
 
 
-def load_data(path="Data/", dataset="breakfast_ingredients_835_final6.csv"):
+def load_data(path, dataset="breakfast_ingredients_835_final6.csv"):
     """Load citation network dataset (cora only for now)"""
     print(path+dataset)
     print('Loading {} dataset...'.format(dataset))
@@ -23,12 +23,12 @@ def load_data(path="Data/", dataset="breakfast_ingredients_835_final6.csv"):
     # idx_features_labels = np.genfromtxt("{}{}.content".format(path, dataset),
     #                                     dtype=np.dtype(str))
 
-    ingg = pd.read_csv(path+'all_ingredients_name.csv')
+    ingg = pd.read_csv(path+'Data/all_ingredients_name.csv')
     col = list(ingg.In)
     cols = ['Dish Type', 'Title'] + col
 
     citations = pd.read_csv(
-        "Data/breakfast_ingredients_835_final6.csv",
+        path+"Data/breakfast_ingredients_835_final6.csv",
         sep=",",
         header=None,
         names=cols,
@@ -64,7 +64,7 @@ def load_data(path="Data/", dataset="breakfast_ingredients_835_final6.csv"):
     # edges_unordered = np.genfromtxt("{}{}.cites".format(path, dataset),
     #                                 dtype=np.int32)
     edges_unordered = pd.read_csv(
-        "Data/similar_ingredients.csv",
+        path+"Data/similar_ingredients.csv",
         sep=",",
         header=None,
         names=['FTitle', 'STitle', 'Sting'],

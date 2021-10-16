@@ -44,6 +44,11 @@
       <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093100-12qdx80e/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093449-3l31jeoe/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093742-p9ek9mhm/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/Data" />
+      <excludeFolder url="file://$MODULE_DIR$/GCP" />
+      <excludeFolder url="file://$MODULE_DIR$/Generate Recipes" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (Ferrato)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

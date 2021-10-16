@@ -1,13 +1,162 @@
+
 # Ferrato
 
 
+[![Build Status](https://dev.azure.com/mhew/data-science-template/_apis/build/status/data-science-template?branchName=master)](https://dev.azure.com/mhew/data-science-template/_build/latest?definitionId=15&branchName=master)
+
 ---
 ![Ferrato](https://github.com/Sparten-Ashvinee/Ferrato/blob/master/food.png)
+<img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/master/food.png" width="24px">
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
 
 
+# Requirements
+- [yacs](https://github.com/rbgirshick/yacs) (Yet Another Configuration System)
+- [PyTorch](https://pytorch.org/) (An open source deep learning platform) 
+- [ignite](https://github.com/pytorch/ignite) (High-level library to help with training neural networks in PyTorch)
 
-<h2 align="center"><u><b>Knowledge Base</b></u></h2>
+#### Setup using
+```
+cd data-science-template
+python -m venv dst-env
+```
+
+### Data
+
+The modified Boston housing dataset consists of 489 data points, with each datapoint having 3 features. This dataset is a modified version of the Boston Housing dataset found on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/).
+
+
+### Continuous Integration
+Continuous Integration (CI) increase quality by building, running tests and performing other validation whenever 
+code is committed. The template contains a build pipeline for Azure DevOps, however requires a couple of manual
+steps to setup:
+
+* Log in to http://dev.azure.com and browse to, or create an organisation & project. The project name should be the same as your github repository name.
+* Under *Pipelines -> Builds select* *New Pipeline*
+* Select github and then your repository. Login / grant any permissions as prompted
+* In the review pane click *run*
+
+You are now setup for CI and automated test / building. You should verify the badge link in this README corresponds 
+with your DevOps project, and as a further step might setup any release pipelines for automated deployment.
+
+At this stage the build pipeline doesn't include MLOps steps, although these can be added based uon your needs.
+
+
+
+## Training
+
+To train the model(s) in the paper, run this command:
+
+```train
+python train.py --input-data <path_to_data> --alpha 10 --beta 20
+```
+
+>📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+
+## Evaluation
+
+To evaluate my model on ImageNet, run:
+
+```eval
+python eval.py --model-file mymodel.pth --benchmark imagenet
+```
+
+>📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
+
+## Pre-trained Models
+
+You can download pretrained models here:
+
+- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+
+>📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+
+## Results
+
+Our model achieves the following performance on :
+
+### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+
+| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| ------------------ |---------------- | -------------- |
+| My awesome model   |     85%         |      95%       |
+
+>📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+
+
+
+
+
+## Generated Project Contents
+Depending upon the selected options when creating the project, the generated structure will look similar to the below:
+
+```
+├── .gitignore               <- Files that should be ignored by git. Add seperate .gitignore files in sub folders if 
+│                               needed
+├── conda_env.yml            <- Conda environment definition for ensuring consistent setup across environments
+├── LICENSE
+├── README.md                <- The top-level README for developers using this project.
+├── requirements.txt         <- The requirements file for reproducing the analysis environment, e.g.
+│                               generated with `pip freeze > requirements.txt`. Might not be needed if using conda.
+├── setup.py                 <- Metadata about your project for easy distribution.
+│
+├── data
+│   ├── interim_[desc]       <- Interim files - give these folders whatever name makes sense.
+│   ├── processed            <- The final, canonical data sets for modeling.
+│   ├── raw                  <- The original, immutable data dump.
+│   ├── temp                 <- Temporary files.
+│   └── training             <- Files relating to the training process
+│
+├── docs                     <- Documentation
+│   ├── data_science_code_of_conduct.md  <- Code of conduct.
+│   ├── process_documentation.md         <- Standard template for documenting process and decisions.
+│   └── writeup              <- Sphinx project for project writeup including auto generated API.
+│      ├── conf.py           <- Sphinx configurtation file.
+│      ├── index.rst         <- Start page.
+│      ├── make.bat          <- For generating documentation (Windows)
+│      └── Makefikle         <- For generating documentation (make)
+│
+├── examples                 <- Add folders as needed e.g. examples, eda, use case
+│
+├── extras                   <- Miscellaneous extras.
+│   └── add_explorer_context_shortcuts.reg    <- Adds additional Windows Explorer context menus for starting jupyter.
+│
+├── notebooks                <- Notebooks for analysis and testing
+│   ├── eda                  <- Notebooks for EDA
+│   │   └── example.ipynb    <- Example python notebook
+│   ├── features             <- Notebooks for generating and analysing features (1 per feature)
+│   ├── modelling            <- Notebooks for modelling
+│   └── preprocessing        <- Notebooks for Preprocessing 
+│
+├── scripts                  <- Standalone scripts
+│   ├── deploy               <- MLOps scripts for deployment (WIP)
+│   │   └── score.py         <- Scoring script
+│   ├── train                <- MLOps scripts for training
+│   │   ├── submit-train.py  <- Script for submitting a training run to Azure ML Service
+│   │   ├── submit-train-local.py <- Script for local training using Azure ML
+│   │   └── train.py         <- Example training script using the iris dataset
+│   ├── example.py           <- Example sctipt
+│   └── MLOps.ipynb          <- End to end MLOps example (To be refactored into the above)
+│
+├── src                      <- Code for use in this project.
+│   └── examplepackage       <- Example python package - place shared code in such a package
+│       ├── __init__.py      <- Python package initialisation
+│       ├── examplemodule.py <- Example module with functions and naming / commenting best practices
+│       ├── features.py      <- Feature engineering functionality
+│       ├── io.py            <- IO functionality
+│       └── pipeline.py      <- Pipeline functionality
+│
+└── tests                    <- Test cases (named after module)
+    ├── test_notebook.py     <- Example testing that Jupyter notebooks run without errors
+    ├── examplepackage       <- examplepackage tests
+        ├── examplemodule    <- examplemodule tests (1 file per method tested)
+        ├── features         <- features tests
+        ├── io               <- io tests
+        └── pipeline         <- pipeline tests
+```
+
+
+<h2 align="center"><u><b>Workflow</b></u></h2>
 
 <p align="center">
   <img style="width:26rem; height:auto" src="https://raw.githubusercontent.com/Elanza-48/Elanza-48/41a4790484e268102dfdab2b7c59d440d3ffafab/resources/img/coders-prog.gif"/>
@@ -98,9 +247,8 @@
     <img src="https://img.shields.io/badge/kubernetes-326CE5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes"/>
   </a>
   <a href="https://www.nginx.com" target="_blank"> 
-    <img src="https://img.shields.io/badge/nginx-009639.svg?style=for-the-badge&logo=nginx&logoColor=white" 
-      alt="nginx"/> 
-  </a> 
+    <img src="https://img.shields.io/badge/nginx-009639.svg?style=for-the-badge&logo=nginx&logoColor=white" alt="nginx"/> 
+  </a>
 </p>
 
 <h3 align="center">Database</h3>
@@ -223,66 +371,25 @@ My Current Workstation Specification </h2>
 
 
 
-## How to contribute:
 
-- Step 1: Fork this repository.
 
-- Step 2: Clone the repository in your local machine.
 
-- Step 3: Create new branch.
-
-- Step 4: Create new markdown file. Your file name should be your GitHub username.
-
-- Step 5: Copy and Paste you GitHub profile readme content in new file.
-
-- Step 6: At the end of the file add following content with appropriate changes. 
-    - Add line break using this command `------`
-    - Credit: `[username](https://github.com/username)`
-    - Last Edited on: Date when you edited this file. Date must be in DD/MM/YYYY format.
-
-- Step 7: Save the file and commit your changes with proper message. Your message must contain your username. 
-
-- Step 8: Push your commit to GitHub.
-
-- Step 9: Submit a Pull Request.
-
-- Step 10: All Done.
-
+## References
+* https://github.com/Statoil/data-science-template/ - The master template for this project
+* http://docs.python-guide.org/en/latest/writing/structure/
+* https://github.com/Azure/Microsoft-TDSP
+* https://drivendata.github.io/cookiecutter-data-science/
+* https://github.com/audreyr/cookiecutter-pypackage
 
 <h3 align="center">Connect with me</h3>
 
 <div style="margin-top:10px" align="center">
-  <div>
-    <a  href="https://dev.to/example" target="_blank">
-      <img src="https://img.shields.io/badge/DEV.to-0A0A0A.svg?style=for-the-badge&logo=devdotto&logoColor=white" alt="example"/>
-    </a>
-    <a href="https://medium.com/@example" target="_blank">
-      <img src="https://img.shields.io/badge/medium-000000.svg?style=for-the-badge&logo=medium&logoColor=white" alt="example"/>
-    </a>
-    <a href="https://codepen.io/@example" target="_blank">
-      <img src="https://img.shields.io/badge/Codepen-000000.svg?style=for-the-badge&logo=codepen&logoColor=white" alt="example"/>
-    </a>
-  </div>
   <div>
     <a  href="https://linkedin.com/in/example" target="_blank">
       <img src="https://img.shields.io/badge/Linked%20In-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="example"/>
     </a>
     <a href="https://twitter.com/example" target="_blank">
       <img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white" alt="example"/>
-    </a>
-    <a href="https://dribbble.com/example" target="_blank">
-      <img src="https://img.shields.io/badge/Dribbble-EA4C89.svg?style=for-the-badge&logo=dribbble&logoColor=black" alt="example"/>
-    </a>
-  </div>
-  <div>
-    <a  href="https://www.codechef.com/users/example" target="_blank">
-      <img src="https://img.shields.io/badge/Codechef-5B4638.svg?style=for-the-badge&logo=codechef&logoColor=white" alt="example"/>
-    </a>
-    <a href="https://www.hackerrank.com/example" target="_blank">
-      <img src="https://img.shields.io/badge/Hackerrank-00EA64.svg?style=for-the-badge&logo=hackerrank&logoColor=black" alt="example"/>
-    </a>
-    <a href="https://www.leetcode.com/example" target="_blank">
-      <img src="https://img.shields.io/badge/LeetCode-FFA116.svg?style=for-the-badge&logo=leetcode&logoColor=black" alt="example"/>
     </a>
   </div>
 </div>

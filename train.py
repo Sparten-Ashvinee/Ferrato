@@ -19,7 +19,7 @@ from omegaconf import OmegaConf
 run = wandb.init(project="Ferrato", tags=["GNN-food"])
 
 os.environ["WANDB_NOTEBOOK_NAME"] = "food_gnn_notebook"
-
+path = '/home/ashvinee/Documents/Ferrato/'
 
 
 def check_cuda(cfg):
@@ -110,7 +110,7 @@ def train(cfg, model, optimizer, scheduler, adj, features, labels, idx_train, id
     return model, loss_train
 
 # Load data
-adj, features, labels, idx_train, idx_val, idx_test = load_data()
+adj, features, labels, idx_train, idx_val, idx_test = load_data(path)
 adj = adj.coalesce().to_dense()
 
 
@@ -141,16 +141,15 @@ def main(cfg):
 
 
     #Save model
-    path = ''
-    PATH = path+'checkpoints/model.pt'
-    '''
+    PATH = 'checkpoints/model.pt'
+
     torch.save({
                 'epoch': cfg.training.epochs,
                 'model_state_dict': model_ft.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
                 'loss': loss,
-                }, PATH)
-    '''
+                }, path+PATH)
+
     print("Optimization Finished!")
     #print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
@@ -163,14 +162,14 @@ def main(cfg):
 
 
     print('Exporting ONNIX model using Pytorch++++++++++++++')
-    export_onnix(root_dir, model, features, adj,path)
+    export_onnix(root_dir, model, features, adj, path)
 
 
     #ONNIX runtime
     print('Runtime ONNIX model using Pytorch+++++++++++++++++')
 
     aab = input().split(',')
-    predictions = ColaPredictor(path,root_dir, cfg.training.batch_size, cfg.training.max_length, features, adj).predict(PATH,model,aab)
+    predictions = ColaPredictor(path).predict(aab)
     print('Predictions: ', predictions)
 
     print('Finished adding to WaB+++++++++++++++++++++++++++++')
