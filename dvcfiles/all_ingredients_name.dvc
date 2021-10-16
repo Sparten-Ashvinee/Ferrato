@@ -1,0 +1,5 @@
+wdir: ../Data
+outs:
+- md5: 559f038c13de31b2b3a3798d5e300893
+  size: 63644
+  path: all_ingredients_name.csv
