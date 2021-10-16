@@ -3,6 +3,47 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.dvc/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_195926-3mq66ncz/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_202650-20unhywh/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_203003-2mv7nno7/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_204255-1y0e4zjp/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205047-86asuu8e/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205215-2gz9e365/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205400-fxe7e0dl/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205523-1ydzoyzr/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205725-li09617j/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205836-35e4512y/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205902-952k74ge/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_205934-1xb4gil6/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_212910-3d1b22k8/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213057-2azdlcrg/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213146-2dd88iux/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213231-2hh3wtfm/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213327-1z0p2oak/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213514-34favy6s/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213553-b9gdxxee/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_213800-7lnb3ae8/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_214045-1md4mi11/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_214224-3u2gul24/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_222901-2xw48kz4/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_222926-3okeq4l2/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_223104-3r4h051g/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_223621-3kfpii2k/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_224626-1syuxr65/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_225010-pj0ruqfc/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_225538-b4alk31c/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_225640-736sc73k/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_225930-3jf1grjk/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211015_230024-3dnj3kxz/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_092021-2vs0lfmd/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_092401-2um8humf/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_092615-1a2kqmr8/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_092838-3dbl8f8b/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_092937-2a9q9eij/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093100-12qdx80e/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093449-3l31jeoe/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/wandb/run-20211016_093742-p9ek9mhm/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (Ferrato)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
