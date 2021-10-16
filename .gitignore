@@ -3,4 +3,5 @@
 /GCP/
 /Data/
 /checkpoints/
+/__pycache__/
 /Pipfile
