@@ -1,0 +1,5 @@
+wdir: ../Data
+outs:
+- md5: e7fc142e17745cd8714f58fc11ea16ef
+  size: 1787019
+  path: bf.csv

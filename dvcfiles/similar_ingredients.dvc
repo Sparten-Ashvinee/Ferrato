@@ -1,0 +1,5 @@
+wdir: ../Data
+outs:
+- md5: 6c96f25a71ab61d3aefe601d99f7d5d9
+  size: 2507
+  path: similar_ingredients.csv
