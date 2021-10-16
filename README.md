@@ -5,7 +5,7 @@
 ![Ferrato](https://github.com/Sparten-Ashvinee/Ferrato/blob/master/food.png)
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="24px">
 
-### Portfolio: https://brdhanani.github.io
+
 
 <h2 align="center"><u><b>Knowledge Base</b></u></h2>
 
