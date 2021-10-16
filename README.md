@@ -25,5 +25,29 @@
   <code> <img height="50" src="https://seeklogo.com/images/S/scikit-learn-logo-8766D07E2E-seeklogo.com.png"> </code>
   <code> <img height="50" src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"> </code>
   <hr>
-  <p align="center">
- <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git"/>&nbsp;<i><b>Git Activeness</b></i></p>
+
+
+## How to contribute:
+
+- Step 1: Fork this repository.
+
+- Step 2: Clone the repository in your local machine.
+
+- Step 3: Create new branch.
+
+- Step 4: Create new markdown file. Your file name should be your GitHub username.
+
+- Step 5: Copy and Paste you GitHub profile readme content in new file.
+
+- Step 6: At the end of the file add following content with appropriate changes. 
+    - Add line break using this command `------`
+    - Credit: `[username](https://github.com/username)`
+    - Last Edited on: Date when you edited this file. Date must be in DD/MM/YYYY format.
+
+- Step 7: Save the file and commit your changes with proper message. Your message must contain your username. 
+
+- Step 8: Push your commit to GitHub.
+
+- Step 9: Submit a Pull Request.
+
+- Step 10: All Done.
