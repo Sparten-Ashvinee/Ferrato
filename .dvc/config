@@ -1,4 +1,0 @@
-[core]
-    remote = awsbucket
-['remote "awsbucket"']
-    url = s3://ferrato
