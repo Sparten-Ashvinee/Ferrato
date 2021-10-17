@@ -1,0 +1,17 @@
+docker-pycreds
+fastapi
+Hydra
+jupyter
+matplotlib
+networkx
+numpy
+omegaconf
+onnxruntime
+pandas
+scipy
+torch
+torch-geometric
+torchsummary
+tqdm
+uvicorn
+wandb

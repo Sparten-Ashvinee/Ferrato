@@ -26,7 +26,7 @@ Default output format [None]: json
 
 Creating S3 bucket
 ```
-aws s3api create-bucket --bucket my-bucket --region us-east-1
+aws s3api create-bucket --bucket my-bucket --region ussudo docker system prune-east-1
 ```
 
 <p align="center">
@@ -57,3 +57,32 @@ Download all data
 dvc pull
 ```
 > Need to setup AWS S3 bucket to download all dataset
+
+
+
+All DVC files
+
+```
+dvc dag
+```
+Output:
+```
++-----------------------------------+  
+| dvcfiles/all_ingredients_name.dvc |  
++-----------------------------------+  
++--------------------+ 
+| dvcfiles/model.dvc | 
++--------------------+ 
++-----------------------------------------------+  
+| dvcfiles/breakfast_ingredients_835_final6.dvc |  
++-----------------------------------------------+  
++-----------------+  
+| dvcfiles/bf.dvc |  
++-----------------+  
++-------------------------------------------+  
+| dvcfiles/breakfast_ingredients_all_v1.dvc |  
++-------------------------------------------+  
++----------------------------------+ 
+| dvcfiles/similar_ingredients.dvc | 
++----------------------------------+ 
+```

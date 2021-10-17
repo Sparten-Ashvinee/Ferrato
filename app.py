@@ -21,8 +21,7 @@ async def get_prediction(text: str):
     return result
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
 
-#uvicorn app:app --ip 0.0.0.0 --port 8000 --reload+'checkpoints/model.pt'
-#vicorn app:app --ip 0.0.0.0 --port 8000 --reload
+#uvicorn app:app --host 0.0.0.0 --port 8000 --reload'

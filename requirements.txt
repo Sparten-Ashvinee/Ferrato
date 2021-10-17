@@ -43,7 +43,7 @@ ftfy==6.0.3
 funcy==1.16
 future==0.18.2
 gitdb==4.0.7
-GitPython==3.1.24
+GitPython
 googledrivedownloader==0.4
 grandalf==0.6
 h11==0.12.0
@@ -51,8 +51,8 @@ Hydra==2.5
 hydra-core==1.1.1
 idna==3.3
 importlib-resources==5.2.2
-ipykernel==6.4.1
-ipython==7.28.0
+ipykernel
+ipython
 ipython-genutils==0.2.0
 ipywidgets==7.6.5
 isodate==0.6.0
