@@ -8,24 +8,42 @@ name: Create Docker Container
 on: [push]
 
 jobs:
-  mlops-container:
+  ferrato-container:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./week_6_github_actions
+        working-directory: ./
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           ref: ${{ github.ref }}
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
       - name: Build container
         run: |
-          docker network create data
-          docker build --tag inference:latest .
-          docker run -d -p 8000:8000 --network data --name inference_container inference:latest
+          docker build --build-arg AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }} \
+                       --build-arg AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
+                       --build-arg AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
+                       --tag ferrato-ecr .
+      - name: Push2ECR
+        id: ecr
+        uses: jwalton/gh-ecr-push@v1
+        with:
+          access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: us-east-2
+          image: ferrato-ecr:latest
 ```
 
 ```
 Secret key in github for AWS
 ```
 
+
+
+> The docker image will be automatically pushed to the AWS ECR through Github Action (workflow)

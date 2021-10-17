@@ -2,8 +2,7 @@
 /Generate Recipes/
 /GCP/
 /__pycache__/
-/Pipfile
-/.dvc/
+/Pipfile/
 /.idea/
 /aws/
 /checkpoints/
