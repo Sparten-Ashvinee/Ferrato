@@ -15,7 +15,7 @@ RUN yum install git -y && yum -y install gcc-c++
 COPY req.txt req.txt
 RUN pip install -r req.txt --no-cache-dir
 COPY ./ ./
-#ENV PYTHONPATH "${PYTHONPATH}:./"
+ENV PYTHONPATH "${PYTHONPATH}:./"
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 RUN pip install "dvc[s3]"

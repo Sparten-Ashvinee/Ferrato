@@ -3,7 +3,7 @@ name: Create Docker Container
 on: [push]
 
 jobs:
-  mlops-container:
+  ferrato-container:
     runs-on: ubuntu-latest
     defaults:
       run:
