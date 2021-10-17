@@ -42,7 +42,7 @@ with your DevOps project, and as a further step might setup any release pipeline
 At this stage the build pipeline doesn't include MLOps steps, although these can be added based uon your needs.
 
 <img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/aa24e3f624e2656405b5e5a450ec4b1ee018fe94/imgs/Flowchart.svg">
-
+<img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/cabd62b179fe91bb1a601eecd8c760c6c968848d/imgs/workflow.png">
 ## Training
 
 To train the model(s) in the paper, run this command:
