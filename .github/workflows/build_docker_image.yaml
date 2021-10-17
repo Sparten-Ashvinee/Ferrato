@@ -25,7 +25,7 @@ jobs:
                        --build-arg AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
                        --build-arg AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
                        --tag ferrato-ecr .
-      name: Update lambda with image
+      - name: Update lambda with image
         run: aws lambda update-function-code --function-name  ferrato-lambd-2 --image-uri 734592791604.dkr.ecr.us-east-2.amazonaws.com/ferrato-ecr:latest
       - name: Push2ECR
         id: ecr
