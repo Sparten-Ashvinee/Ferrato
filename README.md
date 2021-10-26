@@ -78,4 +78,4 @@ python train.py --input-data <path_to_data> --alpha 10 --beta 20
       <img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white" alt="example"/>
     </a>
   </div>
-</div>
+</div> 
