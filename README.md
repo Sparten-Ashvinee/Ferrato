@@ -6,9 +6,19 @@
 ![Ferrato](https://github.com/Sparten-Ashvinee/Ferrato/blob/master/food.png)
 
 # Requirements
-- [yacs](https://github.com/rbgirshick/yacs) (Yet Another Configuration System)
-- [PyTorch](https://pytorch.org/) (An open source deep learning platform) 
-- [ignite](https://github.com/pytorch/ignite) (High-level library to help with training neural networks in PyTorch)
+[All the common python packages along with versions are present in the requirements.txt file]
+- torch == 1.9.1
+- torch-geometric == 2.0.1
+- torchvision == 0.10.1
+- tensorboard==2.5.0
+- boto3==1.17.106
+- dvc==2.8.1
+- fastapi==0.70.0
+- Hydra==2.5
+- networkx==2.6.3
+- onnxruntime==1.9.0
+- mlflow==1.20.2
+- wandb==0.12.4
 
 #### Setup using
 ```
