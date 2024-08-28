@@ -20,16 +20,9 @@
 - mlflow==1.20.2
 - wandb==0.12.4
 
-#### Setup using
-```
-cd data-science-template
-python -m venv dst-env
-```
 
-### Data
-
-The modified Boston housing dataset consists of 489 data points, with each datapoint having 3 features. This dataset is a modified version of the Boston Housing dataset found on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/).
-
+### Dataset
+Initiated working on the dataset collection process from scratch on Indian recipes and their corresponding ingredients. Indian recipes along with its ingredients are extracted from more than 25 different webpages. You can check the graphical representation that illustrates the recipes interconnection based on shared ingredients in the notebook section. For instance, the recipe for Lemon Air Fryer Broccolini require ingredients such as Fresh broccolini, Lemon, and Olive oil. 
 
 ### Continuous Integration
 Continuous Integration (CI) increase quality by building, running tests and performing other validation whenever 
