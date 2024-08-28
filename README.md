@@ -72,6 +72,7 @@ For our project, GNNs can be particularly useful for analyzing the Indian recipe
 
 
 ## References
+* [MLOps Engineering on AWS](https://d1.awsstatic.com/training-and-certification/classroom-training/mlops-engineering-on-aws.pdf)
 * https://github.com/Statoil/data-science-template/ - The master template for this project
 * http://docs.python-guide.org/en/latest/writing/structure/
 * https://github.com/Azure/Microsoft-TDSP
