@@ -29,6 +29,39 @@ Our approach centered around implementing a Graph Neural Network (GNN) for analy
 For your project, GNNs can be particularly useful for analyzing the Indian recipe dataset since they can model the relationships between recipes based on shared ingredients. By representing recipes as nodes and shared ingredients as edges, a GNN can learn to recommend similar recipes, suggest alternative ingredients, or discover new recipe combinations based on the learned embeddings.
 
 ### MLOps steps
+- Project Setup
+    - create conda environment with python
+    - install required packages and dependencies
+    - build a sagemakeer pipeline for training and inference
+- MLFlow and tensorboard integration
+    - Integrate MLFlow and TensorBoard for experiment tracking and visualization of logs and metrics
+- Hydra for configuration file for different stages of the workflow
+    - preprocessing yaml file
+    - model yaml file
+    - training yaml file
+- Versioning with Data Version Control (DVC)
+   - configure dvc with AWS S3 bucket as the remote storage
+   - Manage versioning of data, model artifacts and code
+- ONNIX model
+    - develop a script for exporting pytorch model to onnix format for cross-platform compatibility
+- setup FastAPI
+    - create a app.py file to serve the model for inference through REST API endpoints
+- Docker container
+    - create a dockerfile to containerize the application
+    - buid and run docker locally 
+- Elastic Container Registery (ECR)
+    - Authenticate the docker client to ECR
+    - Tagg the docker image
+    - Push the image to ECR using GitHub action
+- GitHub Action
+    - Add build_dockr_img.yaml in .github/workflows folder to automate the build and deployment process of Docker images to ECR on every push.
+- Lambda - serverless
+    - crate a lambda function lambda_handler.py to deploy the Docker container as a serverless application.
+    - Setup Load balancing for handling requests
+    - Configure REST API/ HTTP API Gateway for handling requests
+- Monitor
+    - configuring kibana using opensearch cluster for log aggregation and visualization
+    - integrating with cloudwatch logs for monitoring application performance and health
 
 
 <img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/5fc6f1d3c57617bf7ad316555a8911cb9c5cbc1c/imgs/workflows2.png">
