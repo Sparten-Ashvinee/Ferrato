@@ -24,20 +24,11 @@
 ### Dataset
 Initiated working on the dataset collection process from scratch on Indian recipes and their corresponding ingredients. Indian recipes along with its ingredients are extracted from more than 25 different webpages. You can check the graphical representation that illustrates the recipes interconnection based on shared ingredients in the notebook section. For instance, the recipe for Lemon Air Fryer Broccolini require ingredients such as Fresh broccolini, Lemon, and Olive oil. 
 
-### Continuous Integration
-Continuous Integration (CI) increase quality by building, running tests and performing other validation whenever 
-code is committed. The template contains a build pipeline for Azure DevOps, however requires a couple of manual
-steps to setup:
+### Model
+Our approach centered around implementing a Graph Neural Network (GNN) for analyzing the Indian recipe dataset. A GNN is neural network designed to handle complex relationships and interactions between entities represented as nodes and edges in a graph. We can say, A GNN is an optimizable transformation on all attributes of the graph (nodes, edges, global context) that preserves graph symmetries (permutation invariances).  
+For your project, GNNs can be particularly useful for analyzing the Indian recipe dataset since they can model the relationships between recipes based on shared ingredients. By representing recipes as nodes and shared ingredients as edges, a GNN can learn to recommend similar recipes, suggest alternative ingredients, or discover new recipe combinations based on the learned embeddings.
 
-* Log in to http://dev.azure.com and browse to, or create an organisation & project. The project name should be the same as your github repository name.
-* Under *Pipelines -> Builds select* *New Pipeline*
-* Select github and then your repository. Login / grant any permissions as prompted
-* In the review pane click *run*
-
-You are now setup for CI and automated test / building. You should verify the badge link in this README corresponds 
-with your DevOps project, and as a further step might setup any release pipelines for automated deployment.
-
-At this stage the build pipeline doesn't include MLOps steps, although these can be added based uon your needs.
+### MLOps steps
 
 
 <img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/5fc6f1d3c57617bf7ad316555a8911cb9c5cbc1c/imgs/workflows2.png">
