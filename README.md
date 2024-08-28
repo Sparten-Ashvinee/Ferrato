@@ -63,7 +63,7 @@ For your project, GNNs can be particularly useful for analyzing the Indian recip
     - configuring kibana using opensearch cluster for log aggregation and visualization
     - integrating with cloudwatch logs for monitoring application performance and health
 
-###Workflow
+### Workflow
 <img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/5fc6f1d3c57617bf7ad316555a8911cb9c5cbc1c/imgs/workflows2.png">
 ## Training
 
