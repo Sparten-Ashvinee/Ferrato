@@ -26,7 +26,7 @@ Initiated working on the dataset collection process from scratch on Indian recip
 
 ### Model
 Our approach centered around implementing a Graph Neural Network (GNN) for analyzing the Indian recipe dataset. A GNN is neural network designed to handle complex relationships and interactions between entities represented as nodes and edges in a graph. We can say, A GNN is an optimizable transformation on all attributes of the graph (nodes, edges, global context) that preserves graph symmetries (permutation invariances).  
-For your project, GNNs can be particularly useful for analyzing the Indian recipe dataset since they can model the relationships between recipes based on shared ingredients. By representing recipes as nodes and shared ingredients as edges, a GNN can learn to recommend similar recipes, suggest alternative ingredients, or discover new recipe combinations based on the learned embeddings.
+For our project, GNNs can be particularly useful for analyzing the Indian recipe dataset since they can model the relationships between recipes based on shared ingredients. By representing recipes as nodes and shared ingredients as edges, a GNN can learn to recommend similar recipes, suggest alternative ingredients, or discover new recipe combinations based on the learned embeddings.
 
 ### MLOps steps
 - Project Setup
@@ -75,11 +75,6 @@ python train.py --input-data <path_to_data> --alpha 10 --beta 20
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
 
 
 ## References
