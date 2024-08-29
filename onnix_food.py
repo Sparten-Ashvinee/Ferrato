@@ -7,8 +7,8 @@ from onnxruntime import  get_all_providers
 import onnxruntime as ort
 import numpy as np
 import scipy.sparse as sp
-#from transformers import AutoTokenizer
-#from transformers import TFDistilBertForSequenceClassification
+from transformers import AutoTokenizer
+from transformers import TFDistilBertForSequenceClassification
 from utils import load_data
 from models import GCN
 
