@@ -16,7 +16,7 @@ from omegaconf import OmegaConf
 
 
 
-run = wandb.init(project="Ferrato", tags=["GNN-food"])
+# run = wandb.init(project="Ferrato", tags=["GNN-food"])
 
 os.environ["WANDB_NOTEBOOK_NAME"] = "food_gnn_notebook"
 path = '/home/ashvinee/Documents/Ferrato/'
@@ -48,8 +48,8 @@ def test(model, adj, features, labels, idx_test):
     loss_test = F.nll_loss(output[idx_test[:354]], labels[idx_test[:354]])
     acc_test = accuracy(output[idx_test[:354]], labels[idx_test[:354]])
 
-    wandb.log({"loss_test": loss_test.item()})
-    wandb.log({"acc_test": acc_test.item()})
+    # wandb.log({"loss_test": loss_test.item()})
+    # wandb.log({"acc_test": acc_test.item()})
 
     print("Test set results:",
           "loss= {:.4f}".format(loss_test.item()),
@@ -85,10 +85,10 @@ def train(cfg, model, optimizer, scheduler, adj, features, labels, idx_train, id
             best_acc = acc_val
             best_model_wts = copy.deepcopy(model.state_dict())
 
-        wandb.log({"loss_train": loss_train.item()})
-        wandb.log({"acc_train": acc_train.item()})
-        wandb.log({"loss_val": loss_val.item()})
-        wandb.log({"acc_train": acc_val.item()})
+        # wandb.log({"loss_train": loss_train.item()})
+        # wandb.log({"acc_train": acc_train.item()})
+        # wandb.log({"loss_val": loss_val.item()})
+        # wandb.log({"acc_train": acc_val.item()})
 
         print('Epoch: {:04d}'.format(epoch + 1),
               'loss_train: {:.4f}'.format(loss_train.item()),
@@ -105,7 +105,7 @@ def train(cfg, model, optimizer, scheduler, adj, features, labels, idx_train, id
     # load best model weights
     model.load_state_dict(best_model_wts)
 
-    wandb.log({"total_time": (time.time() - t_total)})
+    # wandb.log({"total_time": (time.time() - t_total)})
 
     return model, loss_train
 
@@ -119,7 +119,7 @@ def main(cfg):
     print(torch.__version__)
     # print(OmegaConf.to_yaml(cfg))
     # wandb.config
-    wandb.config.update(cfg)
+    # wandb.config.update(cfg)
 
     check_cuda(cfg)
 
