@@ -64,7 +64,7 @@ For our project, GNNs can be particularly useful for analyzing the Indian recipe
     - integrating with cloudwatch logs for monitoring application performance and health
 
 ### Workflow
-<img src="https://github.com/Sparten-Ashvinee/Ferrato/blob/5fc6f1d3c57617bf7ad316555a8911cb9c5cbc1c/imgs/Untitled-2024-08-28-2139_.png">
+<img src="https://github.com/Sparten-Ashvinee/Ferrato/imgs/Untitled-2024-08-28-2139_.png">
 
 
 
